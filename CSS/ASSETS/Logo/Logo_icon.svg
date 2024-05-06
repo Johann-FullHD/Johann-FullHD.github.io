@@ -1,0 +1,100 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 556" width="540" height="556">
+	<title>4926343-ai</title>
+	<defs>
+		<radialGradient id="g1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(484.243,0,0,484.243,270,358)">
+			<stop offset="0" stop-color="#c200ce" stop-opacity="1"/>
+			<stop offset=".999" stop-color="#20242b" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(212.058,0,0,374.085,225.49,13.789)">
+			<stop offset="0" stop-color="#8a0bff"/>
+			<stop offset="1" stop-color="#2a0056"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(210.295,125.914,-127.309,212.625,377.625,-156.166)">
+			<stop offset="0" stop-color="#8a0bff" stop-opacity="0"/>
+			<stop offset="1" stop-color="#2a0056" stop-opacity="1"/>
+		</linearGradient>
+		<linearGradient id="g4" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-346.518,149.214,0,-39.417,387.874)">
+			<stop offset="0" stop-color="#a553ff"/>
+			<stop offset="1" stop-color="#ae38ff"/>
+		</linearGradient>
+		<linearGradient id="g5" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(207.15,67.075,-134.995,416.909,433.24,-66.165)">
+			<stop offset="0" stop-color="#af53ff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#ae38ff" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g6" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(512.722,252.231,-790.779,1607.458,98.27,-51.37)">
+			<stop offset="0" stop-color="#8a0bff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#2a0056" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g7" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(212.058,0,0,374.085,102.452,159.359)">
+			<stop offset="0" stop-color="#3d0056"/>
+			<stop offset="1" stop-color="#ff0ba2"/>
+		</linearGradient>
+		<linearGradient id="g8" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(137.209,188.547,-116.243,84.592,474.111,70.965)">
+			<stop offset="0" stop-color="#3d0056"/>
+			<stop offset="1" stop-color="#e33fc5"/>
+		</linearGradient>
+		<linearGradient id="g9" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-346.518,149.214,0,-225.299,505.877)">
+			<stop offset="0" stop-color="#df38ff"/>
+			<stop offset="1" stop-color="#ff39ff"/>
+		</linearGradient>
+		<linearGradient id="g10" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(373.631,171.098,-297.328,649.284,124.806,-48.822)">
+			<stop offset="0" stop-color="#9e0082" stop-opacity="1"/>
+			<stop offset="1" stop-color="#ff39ff" stop-opacity="0"/>
+		</linearGradient>
+		<linearGradient id="g11" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-512.722,-252.231,790.779,-1607.458,441.73,598.603)">
+			<stop offset="0" stop-color="#8a0bff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#2a0056" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #20242b } 
+		.s1 { opacity: .2;mix-blend-mode: color-dodge;fill: url(#g1) } 
+		.s2 { fill: url(#g2) } 
+		.s3 { fill: url(#g3) } 
+		.s4 { fill: url(#g4) } 
+		.s5 { mix-blend-mode: overlay;fill: url(#g5) } 
+		.s6 { opacity: .4;fill: url(#g6) } 
+		.s7 { fill: url(#g7) } 
+		.s8 { fill: url(#g8) } 
+		.s9 { fill: url(#g9) } 
+		.s10 { fill: url(#g10) } 
+		.s11 { opacity: .3;fill: url(#g11) } 
+		.t12 { font-size: 40px;fill: #f5f4f9;font-weight: 700;font-family: "Poppins-Bold", "Poppins" } 
+		.t13 { font-size: 13px;fill: #f5f4f9;font-weight: 400;font-family: "Poppins-Regular", "Poppins" } 
+	</style>
+	<g id="BACKGROUND">
+		<path id="&lt;Path&gt;" class="s0" d="m770 857.7h-1000v-1000h1000z"/>
+		<path id="&lt;Path&gt;" class="s1" d="m270-127.9c-268.3 0-485.9 217.6-485.9 485.9 0 268.3 217.6 485.9 485.9 485.9 268.3 0 485.9-217.6 485.9-485.9 0-268.3-217.6-485.9-485.9-485.9z"/>
+	</g>
+	<g id="OBJECTS">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="s2" d="m286.6 13.8h-61.1l125.7 245.7-62.9 128.4h74c11.1 0 21.2-6.3 26.1-16.3l44.2-90.4c6.7-13.7 6.6-29.6-0.3-43.2l-100.6-196.6c-8.7-17-26.1-27.6-45.1-27.6z"/>
+				<path id="&lt;Path&gt;" class="s3" d="m286.6 13.8h-61.1l125.7 245.7-62.9 128.4h74c11.1 0 21.2-6.3 26.1-16.3l44.2-90.4c6.7-13.7 6.6-29.6-0.3-43.2l-100.6-196.6c-8.7-17-26.1-27.6-45.1-27.6z"/>
+				<path id="&lt;Path&gt;" class="s4" d="m331.7 41.4c50.1 97.9 54 147.7 19.5 218.1l-62.9 128.4h74c11.1 0 21.2-6.3 26.1-16.3l44.2-90.4c6.7-13.7 6.6-29.6-0.3-43.2z"/>
+				<path id="&lt;Path&gt;" class="s5" d="m331.7 41.4c50.1 97.9 54 147.7 19.5 218.1l-62.9 128.4h74c11.1 0 21.2-6.3 26.1-16.3l44.2-90.4c6.7-13.7 6.6-29.6-0.3-43.2z"/>
+				<path id="&lt;Path&gt;" class="s6" d="m432.3 238l-28.4-55.5c1.9 31.8-5.8 60.8-22.3 94.5l-54.2 110.9h34.9c11.1 0 21.2-6.3 26.1-16.3l44.2-90.4c6.7-13.7 6.6-29.6-0.3-43.2z"/>
+			</g>
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="s7" d="m253.4 533.4h61.1l-125.7-245.7 62.9-128.3h-74c-11.1 0-21.2 6.3-26.1 16.2l-44.2 90.4c-6.7 13.7-6.6 29.7 0.3 43.2l100.6 196.7c8.7 16.9 26.1 27.5 45.1 27.5z"/>
+				<path id="&lt;Path&gt;" class="s8" d="m253.4 533.4h61.1l-125.7-245.7 62.9-128.3h-74c-11.1 0-21.2 6.3-26.1 16.2l-44.2 90.4c-6.7 13.7-6.6 29.7 0.3 43.2l100.6 196.7c8.7 16.9 26.1 27.5 45.1 27.5z"/>
+				<path id="&lt;Path&gt;" class="s9" d="m208.3 505.9c-50.1-98-54-147.7-19.5-218.2l62.9-128.3h-74c-11.1 0-21.2 6.3-26.1 16.2l-44.2 90.4c-6.7 13.7-6.6 29.7 0.3 43.2z"/>
+				<path id="&lt;Path&gt;" class="s10" d="m208.3 505.9c-50.1-98-54-147.7-19.5-218.2l62.9-128.3h-74c-11.1 0-21.2 6.3-26.1 16.2l-44.2 90.4c-6.7 13.7-6.6 29.7 0.3 43.2z"/>
+				<path id="&lt;Path&gt;" class="s11" d="m107.7 309.2l28.4 55.5c-1.9-31.8 5.8-60.8 22.3-94.5l54.2-110.8h-34.9c-11.1 0-21.2 6.3-26.1 16.2l-44.2 90.4c-6.7 13.7-6.6 29.7 0.3 43.2z"/>
+			</g>
+		</g>
+		<g id="&lt;Group&gt;" style="display: none">
+			<text id="CODING
+" style="transform: matrix(2,0,0,2,270,672.275)" >
+				<tspan x="-99.7" y="0" class="t12" dx="0 7 7 7 7 7 7" >CODING
+</tspan>
+			</text>
+			<text id="LOGO DESIGN
+" style="transform: matrix(2,0,0,2,270,724.363)" >
+				<tspan x="-54.5" y="0" class="t13" dx="0 2 2 2 2 2 2 2 2 2 2 2" >LOGO DESIGN
+</tspan>
+			</text>
+		</g>
+	</g>
+</svg>
