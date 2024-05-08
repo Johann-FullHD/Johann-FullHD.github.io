@@ -1,23 +1,31 @@
 <?php
-require 'PHPMailer/PHPMailerAutoload.php';
 // Check if form data was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Get form data
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+  try {
+    // Get form data
+    $name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $message = trim($_POST['message']);
 
-  // Send email
-  $to = 'kjohann1908@gmail.com';
-  $subject = 'New Contact Form Submission';
-  $headers = 'From: '. $email;
-  $body = "Name: $name\nEmail: $email\nMessage:\n$message";
+    // Validate email address
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      throw new Exception('Invalid email address');
+    }
 
-  if (mail($to, $subject, $body, $headers)) {
-    echo 'success';
-  } else {
-    echo 'error';
+    // Set up the email headers
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "X-Mailer: PHP\r\n";
+
+    // Send the email
+    if (mail('kjohann1908@gmail.com', 'New Contact Form Submission', "Name: $name\nEmail: $email\nMessage:\n$message", $headers)) {
+      echo 'Success';
+    } else {
+      throw new Exception('Error sending email');
+    }
+  } catch (Exception $e) {
+    echo 'error: '. $e->getMessage();
   }
 } else {
-  echo 'error';
+  echo 'error: Invalid request method';
 }

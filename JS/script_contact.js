@@ -10,11 +10,7 @@ const submitBtn = contactForm.querySelector('#submit');
 
 // Toggle theme function
 function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
+  document.documentElement.setAttribute('data-theme', e.target.checked? 'dark' : 'light');
 }
 
 // Add event listener to toggle switch
@@ -22,38 +18,38 @@ toggleSwitch.addEventListener('change', switchTheme);
 
 // Validation functions
 function validateName(name) {
-  return name.length >= 3;
+  return name.trim().length >= 3; // Trim whitespace from input
 }
 
 function validateEmail(email) {
   // Use a more comprehensive email validation regex
-  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+  return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email.trim()); // Trim whitespace from input
 }
 
 function validateMessage(message) {
-  return message.length >= 15;
+  return message.trim().length >= 15; // Trim whitespace from input
 }
 
 // Form submission handler
 function handleSubmit(e) {
   e.preventDefault();
 
-  const name = nameInput.value;
-  const email = emailInput.value;
-  const message = messageInput.value;
+  const name = nameInput.value.trim(); // Trim whitespace from input
+  const email = emailInput.value.trim(); // Trim whitespace from input
+  const message = messageInput.value.trim(); // Trim whitespace from input
+
+  let errorMessage = '';
 
   if (!validateName(name)) {
-    errorElement.innerHTML = 'Your name should be at least 3 characters long.';
-    return;
+    errorMessage = 'Your name should be at least 3 characters long.';
+  } else if (!validateEmail(email)) {
+    errorMessage = 'Please enter a valid email address.';
+  } else if (!validateMessage(message)) {
+    errorMessage = 'Please write a longer message.';
   }
 
-  if (!validateEmail(email)) {
-    errorElement.innerHTML = 'Please enter a valid email address.';
-    return;
-  }
-
-  if (!validateMessage(message)) {
-    errorElement.innerHTML = 'Please write a longer message.';
+  if (errorMessage) {
+    errorElement.innerHTML = errorMessage;
     return;
   }
 
@@ -69,7 +65,7 @@ function handleSubmit(e) {
   })
  .then(response => response.text())
  .then(data => {
-    if (data === 'success') {
+    if (data === 'uccess') {
       errorElement.innerHTML = '';
       successMsg.innerHTML = 'Thank you! I will get back to you as soon as possible.';
 
