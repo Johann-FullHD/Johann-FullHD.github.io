@@ -41,7 +41,7 @@ a {
     top: 10px;
     left: 10px;
     position: fixed;
-    z-index: 5;
+    z-index: 50;
 }
 
 .main-title {
@@ -322,7 +322,7 @@ footer {
 }
   
 .card:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(5):before {
@@ -342,35 +342,35 @@ footer {
 }
 
 .card:nth-child(9):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1711606706060-52ea35a489dd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(10):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1558742569-fe6d39d05837?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(11):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(12):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1518276780006-c85b06fa3c11?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(13):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(14):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(15):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1595452767427-0905ad9b036d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .card:nth-child(16):before {
-    background-image: url(https://images.unsplash.com/photo-1618389041494-8fab89c3f22b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1595452767427-0905ad9b036d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .content {
@@ -462,4 +462,40 @@ footer {
     .card:focus-within .content > *:not(.title) {
       transition-duration: 0s;
     }
+}
+
+
+.github-title{
+    font-family: var(--font-family);
+    font-size: 39px;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.github-stats-card, .github-language-card {
+    box-sizing: border-box;
+    margin: 10px; 
+}
+.github-stats-card img, .github-language-card img {
+    width: 400px; 
+    height: 195px; 
+    object-fit: contain;
+}
+
+.nav-bg {
+    transition: background-color 0.5s ease;
+}
+  
+.nav-bg.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
 }
