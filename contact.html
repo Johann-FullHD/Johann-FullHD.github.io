@@ -1,54 +1,59 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="de" class="unselectable">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Landing page Johann Kramer">
-        <meta name="keywords" content="Johann Kramer, CSS, HTML, PHP, JS, SirJFK, johann_fullhd">
-        <meta name="author" content="Johann Kramer">
-        <meta name="copyright" content="Copyright 2024">
-        <meta name="robots" content="index, follow">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page Johann Kramer">
+    <meta name="keywords" content="Johann Kramer, CSS, HTML, PHP, JS, SirJFK, johann_fullhd">
+    <meta name="author" content="Johann Kramer">
+    <meta name="copyright" content="Copyright 2024">
+    <meta name="robots" content="index, follow">
 
-        <link rel="stylesheet" href="CSS\style_contact.css">
-        <link rel="shortcut icon" type="image/x-icon" href="CSS\ASSETS\Logo\Logo_icon.ico">
-        <link rel="icon" type="image/svg" sizes="32x32" href="CSS\ASSETS\Logo\Logo_icon.svg">
-        <link rel="icon" type="image/svg" sizes="16x16" href="CSS\ASSETS\Logo\Logo_icon.svg">
+    <link rel="stylesheet" href="CSS\style_contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="CSS\ASSETS\Logo\Logo_icon.ico">
+    <link rel="icon" type="image/svg" sizes="32x32" href="CSS\ASSETS\Logo\Logo_icon.svg">
+    <link rel="icon" type="image/svg" sizes="16x16" href="CSS\ASSETS\Logo\Logo_icon.svg">
 
-        <title>Johann Kramer | Contact</title>
-    </head>
+    <title>Johann Kramer | Contact</title>
+  </head>
 
-    <body>
-        <div class="contact-container">
-            <div class="left-col">
-              <img class="logo" src="CSS\ASSETS\Logo\Logo_transparent_no_text.png" alt="Logo"/>
+  <body>
+    <div class="contact-container">
+      <div class="left-col">
+        <img class="logo" src="CSS\ASSETS\Logo\Logo_transparent_no_text.png" alt="Logo"/>
+      </div>
 
-            </div>
-            <div class="right-col">
-              <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                  <div class="slider round"></div>
-            </label>
-            <div class="description">Dark Mode</div>
-          </div>
-              
-              <h1>Contact ME</h1>
-              <p>Hey there! I'm excited to connect with you. If you have any inquiries, suggestions, or simply want to start a conversation, feel free to drop me a line using the contact form provided below. I can't wait to hear from you!</p>
-              
-              <form id="contact-form" method="post">
-                <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-                <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                <label for="message">Message</label>
-            <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
-                <!--<a href="javascript:void(0)">--><button type="submit" id="submit" name="submit">Send</button><!--</a>-->
-            
-          </form>
-          <div id="error"></div>
-          <div id="success-msg"></div>
-            </div>
-          </div>
-          <script src="JS/script_contact.js"></script>
-    </body>
+      <div class="right-col">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox"/>
+            <div class="slider round"></div>
+          </label>
+
+          <div class="description">Dark Mode</div>
+        </div>
+
+        <h1>Contact ME</h1>
+        <p>Hey there! I'm excited to connect with you. If you have any inquiries, suggestions, or simply want to start a conversation, feel free to drop me a line using the contact form provided below. I can't wait to hear from you!</p>
+        
+        <form id="contact-form" method="post">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+          <label for="message">Message</label>
+          <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+          <button type="submit" id="submit" name="submit">Send</button>
+        </form>
+        
+        <div id="error"></div>
+        <div id="success-msg"></div>
+      </div>
+    </div>
+    <script src="JS/script_contact.js"></script>
+  </body>
+</html>
+
+
+<!--Made by Johann Kramer-->
