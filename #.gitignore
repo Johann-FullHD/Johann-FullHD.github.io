@@ -25,5 +25,3 @@ db.sqlite3
 
 # Ignore uploads (if you have a file upload feature)
 uploads/
-
-# Add any other files or folders you want to ignore here
