@@ -126,7 +126,7 @@
   }
 }
 
-.faq1-faq7 {
+.faq1-faq8 {
   display: flex;
   overflow: hidden;
   position: relative;
@@ -193,6 +193,116 @@
   flex-direction: column;
 }
 .faq1-faq5-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item6 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq6-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item7 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq7-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item8 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq8-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item9 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq9-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item10 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq10-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item11 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq11-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item12 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq12-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item13 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq13-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item14 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq14-question {
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.faq1-list-item15 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faq1-faq15-question {
   font-style: normal;
   text-align: center;
   font-weight: 600;
