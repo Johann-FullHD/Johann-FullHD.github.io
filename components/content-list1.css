@@ -1,0 +1,22 @@
+.content-list1-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.content-list1-max-width {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  flex-direction: column;
+}
+.content-list1-content {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.content-list1-heading1 {
+  align-self: flex-start;
+}
