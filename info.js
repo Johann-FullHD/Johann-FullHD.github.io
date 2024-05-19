@@ -1,8 +1,8 @@
 let downloadLink = "";
 const validPasswords = {
-  "link-to-eos-templates.zip": ["password1", "password2"],
+  "downloads/EOS-Templates.zip": ["EOS", "LKW-Entladung"],
   "link-to-eos-templates2.zip": ["password3", "password4"],
-  "link-to-powerpoint-templates.zip": ["password5", "password6"],
+  "downloads/PowerPoint.zip": ["PPTX", "Johann", "Julia"],
 };
 
 function openModal(link) {
