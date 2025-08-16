@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <title>Johann Kramer | Wartungsarbeiten & Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Open Graph & Twitter für Social Sharing -->
   <meta property="og:title" content="Johann Kramer | Wartungsarbeiten & Portfolio">
   <meta property="og:description"
     content="Geplante Wartungsarbeiten. Bald ist das Portfolio von Johann Kramer wieder erreichbar.">
@@ -22,8 +21,6 @@
   <meta name="theme-color" content="#0d0d0f">
 
   <link rel="icon" type="image/x-icon" href="Logo_icon.ico">
-
-  <!-- Optimierter Hintergrund via image-set (AVIF/WebP/PNG) -->
   <style nonce="r4nd0mNONCE123">
     :root {
       --bg: #0d0d0f;
@@ -59,7 +56,6 @@
       overflow: hidden;
     }
 
-    /* Hintergrund-Blur-Layer */
     body::before {
       content: "";
       position: fixed;
@@ -179,7 +175,6 @@
       border-radius: 8px;
     }
 
-    /* Nr. 8: Fortschrittsanzeige */
     .progress {
       margin-top: 16px;
     }
@@ -285,7 +280,6 @@
       }
     }
 
-    /* Consent Banner (Nr. 31) */
     .consent {
       position: fixed;
       right: 12px;
@@ -344,7 +338,7 @@
             style="display:block;height:100%;width:0%;background:linear-gradient(90deg,#ffb000,#ff7a00);border-radius:8px;transition:width 1.2s cubic-bezier(.4,1.4,.6,1);"></span>
         </div>
         <div style="margin-top:8px;text-align:center;color:var(--muted);font-size:15px;letter-spacing:0.5px;">
-          Fortschritt: <span id="progressPercent">15</span>%
+          Fortschritt: <span id="progressPercent">25</span>%
         </div>
       </div>
 
@@ -363,7 +357,6 @@
     </noscript>
   </main>
 
-  <!-- Minimaler Countdown, optimiert für SEO und Performance -->
   <script nonce="r4nd0mNONCE123">
     (function () {
       const TARGET_TS = Date.UTC(2025, 9, 3, 18, 0, 0);
@@ -375,7 +368,7 @@
       // Progress Bar
       const progressFill = document.getElementById('progressFill');
       const progressPercent = document.getElementById('progressPercent');
-      const PROGRESS = 15; // Prozent
+      const PROGRESS = 25; // Prozent
       function pad2(n) { return String(n).padStart(2, '0'); }
       function update() {
         let remaining = Math.max(0, TARGET_TS - Date.now());
