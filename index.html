@@ -338,7 +338,7 @@
             style="display:block;height:100%;width:0%;background:linear-gradient(90deg,#ffb000,#ff7a00);border-radius:8px;transition:width 1.2s cubic-bezier(.4,1.4,.6,1);"></span>
         </div>
         <div style="margin-top:8px;text-align:center;color:var(--muted);font-size:15px;letter-spacing:0.5px;">
-          Fortschritt: <span id="progressPercent">25</span>%
+          Fortschritt: <span id="progressPercent">65</span>%
         </div>
       </div>
 
@@ -368,7 +368,7 @@
       // Progress Bar
       const progressFill = document.getElementById('progressFill');
       const progressPercent = document.getElementById('progressPercent');
-      const PROGRESS = 25; // Prozent
+      const PROGRESS = 65; // Prozent
       function pad2(n) { return String(n).padStart(2, '0'); }
       function update() {
         let remaining = Math.max(0, TARGET_TS - Date.now());
