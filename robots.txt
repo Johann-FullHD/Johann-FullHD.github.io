@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /assets/cv/
+
+# Keine Archivierung erlauben (für archive.org usw.)
+User-agent: ia_archiver
+Disallow: /
+
+# Zeitbeschränkung für Crawler
+Crawl-delay: 5
+
+# Für bildbasierte Crawler
+User-agent: Googlebot-Image
+Allow: /assets/img/
+Disallow: /assets/img/equip/
+Disallow: /assets/img/Icons/
+
+User-agent: Google-Extended
+Allow: /
+
+# Für Google Discover
+User-agent: Storebot-Google
+Allow: /
+
+Sitemap: https://johann-fullhd.github.io/sitemap.xml
