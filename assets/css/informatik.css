@@ -1,0 +1,66 @@
+/* Informatik Seite spezifische Anpassungen */
+:root {
+    --background-color: #f8fafc;
+    --sticky-offset: 64px;
+    /* Höhe der fixen Header-Navigation (anpassen, falls anders) */
+}
+
+[data-theme="dark"] {
+    --background-color: #0f172a;
+}
+
+body {
+    background: var(--background-color);
+}
+
+/* Optionale visuelle Hinweise: Rechtsklick wird unterbunden */
+body.disable-context-menu {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.if-main {
+    display: block;
+    padding-top: calc(var(--sticky-offset) + 0.5rem);
+}
+
+/* Premium-Section braucht keinen zusätzlichen Offset mehr */
+.premium-section {
+    margin-top: 1rem;
+}
+
+.projects-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Screenreader-only Utility */
+.sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Footer Abstand Korrektur */
+.footer37-footer4 {
+    margin-top: 3rem;
+}
+
+/* Performance-Utilities */
+.project-gallery {
+    content-visibility: auto;
+    contain-intrinsic-size: 600px;
+}
+
+.project-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 320px 260px;
+}

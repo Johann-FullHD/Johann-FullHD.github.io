@@ -1,0 +1,84 @@
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    .privacy-button, 
+    .privacy-button:hover,
+    .privacy-section,
+    .privacy-right-card,
+    .privacy-right-card:hover,
+    .privacy-toc a,
+    .privacy-fab,
+    .privacy-fab.show,
+    .privacy-fab:hover {
+        transition: none !important;
+        animation: none !important;
+        transform: none !important;
+    }
+    
+    .highlight,
+    .privacy-search input:focus + i {
+        animation: none !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .privacy-container {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .privacy-bg, 
+    .privacy-toc, 
+    .privacy-search,
+    .privacy-buttons,
+    .privacy-floating-action,
+    .privacy-footer,
+    .nav,
+    .footer,
+    header,
+    footer,
+    .cookie-consent,
+    #backToTop {
+        display: none !important;
+    }
+    
+    .privacy-content {
+        display: block;
+    }
+    
+    .privacy-main {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+    
+    .privacy-section {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+    
+    .privacy-header h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .privacy-meta {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+}

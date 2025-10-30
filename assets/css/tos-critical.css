@@ -1,0 +1,91 @@
+/* Critical CSS für die Nutzungsbedingungen */
+:root {
+    --tos-primary: #0a84ff;
+    --tos-bg: #fff;
+    --tos-bg-alt: #f8f9fa;
+    --tos-text: #222;
+    --tos-text-light: #666;
+    --tos-border: #e2e8f0;
+    --tos-radius: 10px;
+    --tos-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    --tos-transition: all 0.2s ease;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --tos-primary: #4f8eff;
+        --tos-bg: #181f2a;
+        --tos-bg-alt: #232c3a;
+        --tos-text: #e2e8f0;
+        --tos-text-light: #a0aec0;
+        --tos-border: #334155;
+        --tos-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+}
+html.dark-mode .tos-container,
+html[data-theme="dark"] .tos-container {
+    background: var(--tos-bg);
+    color: var(--tos-text);
+}
+.tos-container {
+    max-width: 900px;
+    margin: 3rem auto 2rem auto;
+    background: var(--tos-bg);
+    color: var(--tos-text);
+    border-radius: var(--tos-radius);
+    box-shadow: var(--tos-shadow);
+    padding: 2rem 1.5rem 2.5rem 1.5rem;
+    border: 1px solid var(--tos-border);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.tos-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.tos-title {
+    font-size: 2.2rem;
+    color: var(--tos-primary);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.tos-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--tos-text-light);
+    font-size: 0.98rem;
+    flex-wrap: wrap;
+}
+.tos-meta i {
+    color: var(--tos-primary);
+    margin-right: 0.3em;
+}
+.tos-toc {
+    background: var(--tos-bg-alt);
+    border-radius: var(--tos-radius);
+    border: 1px solid var(--tos-border);
+    margin-bottom: 2.2rem;
+    padding: 1.2rem 1rem 1.2rem 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    font-size: 1.05rem;
+}
+.tos-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+.tos-toc a {
+    color: var(--tos-primary);
+    text-decoration: none;
+    padding: 0.2em 0.7em;
+    border-radius: 6px;
+    transition: var(--tos-transition);
+    font-weight: 500;
+}
+.tos-toc a:hover, .tos-toc a:focus, .tos-toc a.active {
+    background: rgba(10,132,255,0.08);
+    color: var(--tos-primary);
+    outline: none;
+}

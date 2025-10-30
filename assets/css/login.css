@@ -1,0 +1,381 @@
+.glitch-form-wrapper {
+  --bg-color: #0d0d0d;
+  --primary-color: #00f2ea;
+  --secondary-color: #a855f7;
+  --text-color: #e5e5e5;
+  --font-family: "Fira Code", Consolas, "Courier New", Courier, monospace;
+  --glitch-anim-duration: 0.5s;
+}
+
+.glitch-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  background-color: #050505;
+  padding: 2rem 0;
+  min-height: 80vh;
+}
+
+/* --- Card Structure --- */
+.glitch-card {
+  background-color: var(--bg-color);
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid rgba(0, 242, 234, 0.2);
+  box-shadow:
+    0 0 20px rgba(0, 242, 234, 0.1),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: 1rem;
+  position: relative;
+}
+
+.glitch-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.3;
+  filter: blur(10px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5em 1em;
+  border-bottom: 1px solid rgba(0, 242, 234, 0.2);
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.card-title svg {
+  width: 1.2em;
+  height: 1.2em;
+  stroke: var(--primary-color);
+}
+
+.card-dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #333;
+  margin-left: 5px;
+}
+
+.card-dots span:nth-child(1) {
+  background-color: #ff5f56;
+}
+
+.card-dots span:nth-child(2) {
+  background-color: #ffbd2e;
+}
+
+.card-dots span:nth-child(3) {
+  background-color: #27c93f;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* --- Form Elements --- */
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+/* Glitch-Text Animation für SECURE_DATA */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text.glitching::before,
+.glitch-text.glitching::after {
+  content: "SECURE_DATA";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text.glitching::before {
+  color: var(--secondary-color);
+  animation: glitch-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 1;
+}
+
+.glitch-text.glitching::after {
+  color: var(--primary-color);
+  animation: glitch-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  z-index: 2;
+}
+
+/* Shake-Animation für Fehler */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+/* Login-Fehler Styling */
+.login-error {
+  background-color: rgba(255, 59, 48, 0.1);
+  color: #ff3b30;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-left: 3px solid #ff3b30;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.login-error.success {
+  background-color: rgba(52, 199, 89, 0.1);
+  color: #34c759;
+  border-left: 3px solid #34c759;
+}
+
+/* Rest of the form elements */
+.form-label {
+  position: absolute;
+  top: 0.75em;
+  left: 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0, 242, 234, 0.3);
+  padding: 0.75em 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown) + .form-label {
+  top: -1.2em;
+  font-size: 0.8rem;
+  opacity: 1;
+}
+
+.form-group input:focus + .form-label::before,
+.form-group input:focus + .form-label::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+.form-group input:focus + .form-label::before {
+  color: var(--secondary-color);
+  animation: glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.form-group input:focus + .form-label::after {
+  color: var(--primary-color);
+  animation: glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+@keyframes glitch-anim {
+  0% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+  20% {
+    transform: translate(-5px, 3px);
+    clip-path: inset(50% 0 20% 0);
+  }
+  40% {
+    transform: translate(3px, -2px);
+    clip-path: inset(20% 0 60% 0);
+  }
+  60% {
+    transform: translate(-4px, 2px);
+    clip-path: inset(80% 0 5% 0);
+  }
+  80% {
+    transform: translate(4px, -3px);
+    clip-path: inset(30% 0 45% 0);
+  }
+  100% {
+    transform: translate(0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* --- Button Styling --- */
+.submit-btn {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 25px var(--primary-color);
+  outline: none;
+}
+
+.submit-btn:active {
+  transform: scale(0.97);
+}
+
+/* --- Glitch Effect for Button --- */
+.submit-btn .btn-text {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.2s ease;
+}
+
+.submit-btn:hover .btn-text {
+  opacity: 0;
+}
+
+.submit-btn::before,
+.submit-btn::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: var(--primary-color);
+  transition: opacity 0.2s ease;
+}
+
+.submit-btn:hover::before,
+.submit-btn:focus::before {
+  opacity: 1;
+  color: var(--secondary-color);
+  animation: glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.submit-btn:hover::after,
+.submit-btn:focus::after {
+  opacity: 1;
+  color: var(--bg-color);
+  animation: glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+/* Dark/Light Mode Support */
+@media (prefers-color-scheme: light) {
+  .glitch-form-wrapper {
+    --bg-color: #f5f5f5;
+    --primary-color: #0097b2;
+    --secondary-color: #8a3ffc;
+    --text-color: #1a1a1a;
+    background-color: #e0e0e0;
+  }
+
+  .glitch-card {
+    box-shadow:
+      0 0 20px rgba(0, 151, 178, 0.1),
+      inset 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .glitch-card {
+    margin: 0.5rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-group input:focus + .form-label::before,
+  .form-group input:focus + .form-label::after,
+  .submit-btn:hover::before,
+  .submit-btn:focus::before,
+  .submit-btn:hover::after,
+  .submit-btn:focus::after {
+    animation: none;
+    opacity: 0;
+  }
+
+  .submit-btn:hover .btn-text {
+    opacity: 1;
+  }
+}
