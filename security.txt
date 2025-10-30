@@ -1,8 +1,18 @@
-# security.txt nach RFC 9116
-Contact: mailto:kjohann1908@gmail.com
-Expires: 2025-12-31T23:59:59Z
+# Security Policy for johann-fullhd.github.io
+# According to RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116.html)
+
+# Security Contact
+Contact: mailto:security@johann-fullhd.github.io
+
+# Security Policy
+Policy: https://johann-fullhd.github.io/security-policy.html
+
+# Preferred Languages
 Preferred-Languages: de, en
-Policy: https://johann-fullhd.github.io/privacy-policy.html#sicherheit
-Hiring: https://johann-fullhd.github.io/about.html
-Encryption: https://keys.openpgp.org/vks/v1/by-email/kjohann1908%40gmail.com
-Canonical: https://johann-fullhd.github.io/security.txt
+
+# Canonical URL
+Canonical: https://johann-fullhd.github.io/.well-known/security.txt
+
+# Expiration (Required): Format: YYYY-MM-DDThh:mm:ssZ
+# Set to expire in 1 year
+Expires: 2025-01-31T23:59:59Z
