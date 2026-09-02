@@ -95,6 +95,45 @@ kbd{padding:2px 5px;border:1px solid #d6cec7;border-bottom-width:2px;border-radi
 <div id="palette" class="palette hidden"><div class="palettebox"><input id="paletteInput" autocomplete="off" placeholder="Befehl, Person, Aufgabe, Termin, Dokument …"><div class="palette-list" id="paletteList"></div></div></div>
 <div class="toast" id="toast"></div>
 <script>
+// 1. Supabase-Client initialisieren
+const supabaseUrl = 'https://supabase.co';
+
+// Kopiere genau den "Publishable key" (sb_publishable_...) aus deinem Screenshot hier hinein:
+const supabaseKey = 'sb_publishable_Mr0hs4Xk6plMSoZBRa-kUw_nsYcSYE-'; 
+
+const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+// 2. Deine Funktion zum Prüfen des Zugangsschlüssels
+async function pruefeZugang() {
+    // Holt den eingegebenen Code aus deinem Textfeld
+    const eingegebenerSchluessel = document.getElementById('cgwUpIleaYJlnXjuvsJ5WSwnph03TcMLwg3BbyDR4c8').value; 
+
+    // Fragt direkt in der Tabelle ab, ob die ID oder der Schlüssel existiert
+    const { data, error } = await supabase
+        .from('abgaben_und_jobs') // Trage hier den Namen deiner Tabelle ein
+        .select('*')
+        .eq('wert', eingegebenerSchluessel); // Sucht nach dem exakten Schlüssel
+
+    // Wenn etwas schiefgeht (z.B. Tippfehler im Tabellennamen)
+    if (error) {
+        console.error("Datenbank-Fehler:", error);
+        alert("Fehler bei der Abfrage: " + error.message);
+        return;
+    }
+
+    // Wenn der Schlüssel in der Tabelle gefunden wurde
+    if (data && data.length > 0) {
+        alert("Zugang gewährt! Willkommen im Portal.");
+        
+        // HIER kommt dein Code hin, um den Vorstand weiterzuleiten (z.B. Fenster einblenden)
+        document.getElementById('login-bereich').style.display = 'none';
+        document.getElementById('vorstands-cockpit').style.display = 'block';
+        
+    } else {
+        alert("Schlüssel ungültig oder widerrufen!");
+    }
+}
+
 const API="https://vnyxekrulkmxlibswscq.supabase.co/functions/v1/abi27-portal-v2";
 const state={data:null,section:localStorage.getItem("abi27_section_v3")||"dashboard",taskView:localStorage.getItem("abi27_task_view")||"board",taskFilter:"all",studentQuery:"",studentGroup:"all",studentStatus:"active",paletteIndex:0,cacheKey:"abi27_dashboard_cache_v4",favorites:JSON.parse(localStorage.getItem("abi27_favorites_v2")||"[]"),compact:localStorage.getItem("abi27_compact")==="1",online:false};
 const navItems=[
